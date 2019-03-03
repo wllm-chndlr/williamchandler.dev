@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
 /**
  * Base Elements
  */
@@ -19,29 +20,95 @@ p,
 div,
 span,
 a {
-  font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-family: 'Oswald', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
   line-height: 1.5;
 }
 
 body {
-  background: #e6e6e6;
-  padding: 2em;
+  background: #ffffff;
+  /* padding: 2em; */
+  /* margin: 40px; */
+
 }
 
 a {
-  color: rgb(208, 112, 33);
+  color: #525252;
   text-decoration: none;
+  transition: color 0.5s ease;
+
 }
 
-.container {
-    /* max-width: 1024px; */
+a:hover {
+    color: orange;
+}
+
+/* .container {
+    max-width: 1024px;
     min-height: 100vh;
-    background: #e6e6e6;
+    background: #ffffff;
     margin: 0 auto;
+} */
+
+/* .menu {
+    height: 4em;
+    padding: 2em;
+} */
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  /* grid-gap: 10px; */
+  background-color: #fff;
+  color: #fff;
+  min-height: 100vh;
+
 }
 
-.menu {
-    height: 4em;
-    /* padding: 2em; */
+.box {
+  background-color: rgb(112, 139, 150);
+  /* border: 3px solid rgb(112, 139, 150); */
+
+  color: #444;
+  border-radius: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2rem;
+  opacity: 0.9;
+  transition: background-color 0.5s ease;
+}
+
+.box:hover {
+    background-color: rgb(125, 156, 168);
+
+    /* opacity: 1; */
+    /* border: 3px solid rgb(100, 133, 146); */
+}
+
+.a {
+    font-size: 4em;
+}
+
+.c {
+    display: flex;
+}
+
+.d {
+    display: flex;
+    align-items: center;
+}
+
+.e {
+    font-size: 4em;
+    justify-content: center;
+}
+
+.route-link {
+    display: flex;
+    margin-left: 5px;
+
 }
 

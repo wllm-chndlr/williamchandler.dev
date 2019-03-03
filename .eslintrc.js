@@ -6,7 +6,7 @@ module.exports = {
   },
   plugins: [
     'ember',
-    'hbs'
+    // 'hbs'
   ],
   extends: [
     'eslint:recommended',
@@ -16,7 +16,7 @@ module.exports = {
     browser: true
   },
   rules: {
-    'hbs/check-hbs-template-literals': 4
+    // 'hbs/check-hbs-template-literals': 4
   },
   overrides: [
     // node files
