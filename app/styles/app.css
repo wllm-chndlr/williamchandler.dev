@@ -22,6 +22,7 @@ span,
 a {
   font-family: 'Oswald', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
   line-height: 1.5;
+  color: #525252;
 }
 
 body {
@@ -82,7 +83,7 @@ a:hover {
 }
 
 .box:hover {
-    background-color: rgb(245, 245, 245);
+    /* background-color: rgb(245, 245, 245); */
 
     /* opacity: 1; */
     /* border: 3px solid rgb(100, 133, 146); */
@@ -104,6 +105,11 @@ a:hover {
 .e {
     font-size: 4em;
     justify-content: center;
+}
+
+.g {
+    display: flex;
+    /* justify-content: space-between; */
 }
 
 .route-link {
