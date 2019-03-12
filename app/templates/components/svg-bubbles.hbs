@@ -1,7 +1,7 @@
 <div class="svg-move">
   <button {{action "move"}}>Move</button>
 </div>
-<svg width="100%" height="100%" >
+<svg width="50vw" height="50vh" >
   {{#animated-each bubbles key="id" watch="x,y,r" use=moveThem duration=1000 as |bubble|}}
     <circle id="bubble-{{bubble.id}}" cx="{{bubble.x}}%" cy="{{bubble.y}}%" r={{bubble.radius}} fill="white" stroke="black" />
   {{/animated-each}}
