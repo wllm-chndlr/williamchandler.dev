@@ -1,4 +1,4 @@
- <div class="wrapper">
+ {{!-- <div class="wrapper">
     <div class="box grid-1">
          
     </div>
@@ -8,6 +8,7 @@
     <div class="box grid-3">
         {{#each model as |project|}}
             {{project.title}}
+            {{project.image}}
         {{/each}}
     </div>
     <div class="box grid-4">
@@ -28,4 +29,8 @@
     <div class="box grid-9">
 
     </div>
-</div>
+</div> --}}
+
+{{#each this.model as |projectCard|}}
+  <ProjectCard @project={{projectCard}} />
+{{/each}}
