@@ -13,6 +13,16 @@ export default Route.extend({
                 image: 'assets/images/simpsons.png',
                 description: 'Memory game built with React',
             }, 
+            {
+                title: 'Rad Drumkit',
+                image: 'assets/images/drumkit.png',
+                description: 'A pretty rad keyboard-based drumkit',
+            }, 
+            {
+                title: 'Birth Works ATX',
+                image: 'assets/images/jsc.png',
+                description: 'Site for Austin-based birth doula and educator',
+            }, 
         ];
     }
 });

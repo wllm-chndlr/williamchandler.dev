@@ -1,36 +1,7 @@
- {{!-- <div class="wrapper">
-    <div class="box grid-1">
-         
+<div class="grid-wrap">
+  {{#each this.model as |projectCard|}}
+    <div class="project-card-tw">
+      <ProjectCard @project={{projectCard}} />
     </div>
-    <div class="box grid-2">
-        
-    </div>
-    <div class="box grid-3">
-        {{#each model as |project|}}
-            {{project.title}}
-            {{project.image}}
-        {{/each}}
-    </div>
-    <div class="box grid-4">
-
-    </div>
-    <div class="box grid-5">
-        
-    </div>
-    <div class="box grid-6">
-
-    </div>
-    <div class="box grid-7">
-
-    </div>
-    <div class="box grid-8">
-       
-    </div>
-    <div class="box grid-9">
-
-    </div>
-</div> --}}
-
-{{#each this.model as |projectCard|}}
-  <ProjectCard @project={{projectCard}} />
-{{/each}}
+  {{/each}}
+</div>

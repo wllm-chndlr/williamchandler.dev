@@ -1,9 +1,16 @@
 <div class="svg-move">
-  <button {{action "move"}}>Move</button>
+  {{!-- <button {{action "move"}}>Move</button> --}}
+  <button 
+    class="bg-white hover:bg-grey-lightest text-grey-darkest font-semibold py-2 px-4 border border-grey-light rounded shadow"
+    {{action "move"}}
+  >
+    Bubbles!
+  </button>
 </div>
 <svg width="50vw" height="50vh" >
   {{#animated-each bubbles key="id" watch="x,y,r" use=moveThem duration=1000 as |bubble|}}
-    <circle id="bubble-{{bubble.id}}" cx="{{bubble.x}}%" cy="{{bubble.y}}%" r={{bubble.radius}} fill="white" stroke="black" />
+    <circle id="bubble-{{bubble.id}}" cx="{{bubble.x}}%" cy="{{bubble.y}}%" r={{bubble.radius}} fill="white" stroke="#717f9e" />
   {{/animated-each}}
 </svg>
-{{outlet}}
+
+{{yield}}

@@ -6,7 +6,7 @@ import { parallel } from 'ember-animated';
 export default Component.extend({
   bubbles: computed(function() {
     let list = [];
-    for (let id = 0; id < 10; id++) {
+    for (let id = 0; id < 20; id++) {
       list.push({
         id,
         x: Math.floor(Math.random()*100),
