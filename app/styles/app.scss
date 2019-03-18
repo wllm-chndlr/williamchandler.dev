@@ -1,6 +1,7 @@
 @import 'tailwind';
 @import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono);
 
 * {
   margin: 0;
@@ -18,9 +19,10 @@ p,
 div,
 span,
 a {
-  font-family: 'Oswald', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  color: #525252;
+//   font-family: 'Oswald', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: #525252;
+    font-family: 'IBM Plex Mono', monospace;
+    line-height: 1.5;
 }
 
 body {
@@ -29,54 +31,57 @@ body {
 }
 
 .container {
-    min-height: 100vh;
-    max-height: 100vh;
-    min-width: 100vw;
     background: #ffffff;
-    margin: 0 auto;
     display: flex;
+    margin: 0 auto;
+    max-height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 .main-content {
     min-height: 100%;
     max-height: 100%;
-    padding: 1rem;
+    // padding: 1rem;
     width: 85vw;
 }
 
 .main-nav {
-    min-height: 100%;
-    width: 15vw;
-    display: grid;
     background: #444;
+    display: grid;
+    min-height: 100%;
     padding: 1rem;
+    width: 15vw;
+
     .nav-link-container {
+        font-size: 1rem;
         justify-content: flex-end;
-        font-size: 2rem;
-        text-align: right;
         padding: 1rem;
+        text-align: right;
     }
     
     .nav-name-container {
+        align-items: center;
         display: flex;
         justify-content: center;
-        align-items: center;
-        text-align: right;
         padding: 1rem;
-
+        text-align: right;
     }
     
     .nav-icon-container {
+        align-items: flex-end;
         display: flex;
+        font-size: 2rem;
         flex-direction: column;
         justify-content: flex-end;
-        align-items: flex-end;
-        font-size: 2rem;
         padding: 1rem;
     }
 }
 
 button {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
     &:focus {
         outline: none;
     }
@@ -90,16 +95,10 @@ i,
     transition: all 0.5s ease;
 }
 
-svg {
-    border: 1px solid #abaeb4;
-    border-radius: 50;
-    margin-top: 1rem;
-}
-
 a:hover,
 i:hover {
     color: orange;
-    transform: scale(1.4);
+    transform: scale(1.1);
 }
 
 i {
@@ -107,8 +106,16 @@ i {
     margin-bottom: 20px;
 }
 
+svg {
+    // border: 1px solid #abaeb4;
+    border-radius: 50;
+    // margin-top: 1rem;
+    width: 85vw;
+    height: 100vh; 
+}
+
 .name {
-    font-size: 3rem;
+    font-size: 1.5rem;
     transition: all 0.5s ease;
     max-width: 100%;
 }
@@ -122,24 +129,24 @@ i {
 }
 
 .grid-wrap {
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
     height: 100%;
+    justify-content: center;
     width: 100%;
 }
 
 .project-card-tw {
     display: flex;
+    justify-content: center;
     min-width: 100%;
     max-width: 80%;
-    justify-content: center;
-    max-height: 100%;
+    // max-height: 100%;
+    padding: 1rem;
 
     img {
-        max-height: 250px;
+        max-height: 200px;
     }
 }
-

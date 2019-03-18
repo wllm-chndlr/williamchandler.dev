@@ -7,9 +7,18 @@
     Bubbles!
   </button>
 </div>
-<svg width="50vw" height="50vh" >
+<svg>
   {{#animated-each bubbles key="id" watch="x,y,r" use=moveThem duration=1000 as |bubble|}}
-    <circle id="bubble-{{bubble.id}}" cx="{{bubble.x}}%" cy="{{bubble.y}}%" r={{bubble.radius}} fill="white" stroke="#717f9e" />
+    <circle 
+      id="bubble-{{bubble.id}}" 
+      cx="{{bubble.x}}%" 
+      cy="{{bubble.y}}%" 
+      r={{bubble.radius}} 
+      {{!-- fill={{bubble.color}} --}}
+      fill="white"
+      {{!-- stroke="#717f9e"  --}}
+      stroke={{bubble.stroke}}
+    />
   {{/animated-each}}
 </svg>
 

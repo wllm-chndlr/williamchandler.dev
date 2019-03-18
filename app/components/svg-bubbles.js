@@ -6,12 +6,15 @@ import { parallel } from 'ember-animated';
 export default Component.extend({
   bubbles: computed(function() {
     let list = [];
-    for (let id = 0; id < 20; id++) {
+    for (let id = 0; id < 30; id++) {
       list.push({
         id,
         x: Math.floor(Math.random()*100),
         y: Math.floor(Math.random()*100),
-        radius: Math.floor(Math.random()*50)
+        radius: Math.floor(Math.random()*75),
+        // color: `#${Math.floor(Math.random()*16777215).toString(16)}`
+        stroke: `#${Math.floor(Math.random()*16777215).toString(16)}`
+
       });
     }
     return list;
@@ -22,7 +25,7 @@ export default Component.extend({
       parallel(
         moveSVG.property('cx'),
         moveSVG.property('cy'),
-        moveSVG.property('r')
+        moveSVG.property('r'),
       )
     );
   },
