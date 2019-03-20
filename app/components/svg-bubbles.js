@@ -4,6 +4,7 @@ import moveSVG from 'ember-animated/motions/move-svg';
 import { parallel } from 'ember-animated';
 
 export default Component.extend({
+  classNames: ['bubble-container'],
   bubbles: computed(function() {
     let list = [];
     for (let id = 0; id < 30; id++) {

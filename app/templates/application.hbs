@@ -1,8 +1,93 @@
+{{! template-lint-disable }}
+
+
 <div class="container">
-    <div class="main-content">
+    
+    <div class="grid-box grid-box-1"></div>
+    
+    <div class="grid-box grid-box-2">
+        <div class="banner banner-2">
+            <div class="nav-link-container">
+                <div class="route-link">
+                    {{#link-to "index"}}
+                        home
+                    {{/link-to}}
+                </div>
+                <div class="route-link">
+                    {{#link-to "projects"}}
+                        projects
+                    {{/link-to}}
+                </div>
+                <div class="route-link">
+                    {{#link-to "about"}}
+                        about
+                    {{/link-to}}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="grid-box grid-box-3"></div>
+    
+    <div class="grid-box grid-box-4">
+        <div class="banner banner-4">
+            <div class="nav-icon-container">
+                <a 
+                    class="nav-icon-link"
+                    href="https://github.com/wllm-chndlr" 
+                    rel="noopener noreferrer" 
+                    target="_blank"
+                >
+                    {{fa-icon "github"}}
+                </a>
+                <a 
+                    class="nav-icon-link"
+                    href="https://www.linkedin.com/in/wllmchndlr/" 
+                    rel="noopener noreferrer" 
+                    target="_blank"
+                >
+                    {{fa-icon "linkedin"}}
+                </a>
+                <a 
+                    class="nav-icon-link"
+                    href="https://twitter.com/wllmchndlr" 
+                    rel="noopener noreferrer" 
+                    target="_blank"
+                >
+                    {{fa-icon "twitter"}}
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="grid-box grid-box-5">
         {{outlet}}
     </div>
-    <div class="main-nav">
+    
+    <div class="grid-box grid-box-6">
+        <div class="banner banner-6">
+            <span class="site-name">
+                WILLIAM CHANDLER
+            </span>
+        </div>
+    </div>
+    
+    <div class="grid-box grid-box-7"></div>
+    
+    <div class="grid-box grid-box-8">
+        <div class="banner banner-8">
+            <div class="built-with">
+                Built with Ember, SASS, and {{fa-icon "coffee"}}
+            </div>
+        </div>
+    </div>
+    
+    <div class="grid-box grid-box-9"></div>
+
+</div>
+
+
+    {{!-- <div class="main-nav">
         <div class="nav-link-container">
             {{nav-links}}
         </div>
@@ -22,8 +107,8 @@
                 {{fa-icon "twitter"}}
             </a>
         </div>
-    </div>
+    </div> --}}
     {{!-- <div class="main-footer">
         Built with Ember.js
     </div> --}}
-</div>
+{{!-- </div> --}}
