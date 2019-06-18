@@ -64,6 +64,10 @@ body {
             justify-content: center;
             transition: all 0.5s ease;
             z-index: 5;
+
+            &:hover {
+                box-shadow: 8px 8px 5px rgb(192, 192, 192);
+            }
         }
 
         &.grid-box-2 {
@@ -97,13 +101,15 @@ body {
         &.grid-box-4 {
             display: flex;
             align-items: flex-end;
+            min-width: 3rem;
 
             .banner-4 {
-                height: 14rem;
-                transform: skew(0, 15deg);
-                width: 3rem;
                 border-bottom-right-radius: 5px;
                 border-top-right-radius: 5px;
+                height: 14rem;
+                min-width: 3rem;
+                transform: skew(0, 15deg);
+                width: 3rem;
     
                 .nav-icon-container {
                     display: flex;
@@ -133,10 +139,15 @@ body {
         &.grid-box-5 {
             display: flex;
             justify-content: center;
-            align-items: center;
+            // align-items: center;
             overflow-y: auto;
             max-width: 70vw;
             justify-self: center;
+
+            .grid-wrap-index {
+                display: flex;
+                align-items: center;
+            }
 
             .grid-wrap-feature {
                 display: grid;
@@ -148,6 +159,9 @@ body {
                 grid-gap: 2rem;
                 grid-template-columns: 1fr 1fr;
                 max-height: 100%;
+                // display: grid;
+                // max-width: 100%;
+                // max-height: 100vh;
 
                 .test-project {
                     background: burlywood;
@@ -159,15 +173,16 @@ body {
                     height: auto;
                     background: white;
                     max-width: 100%;
+                    // max-height: 30vh;
 
                     .text-base {
                         max-width: 350px;
                     }
                 
-                    img {
-                        max-height: 200px;
-                        max-width: 400px;
-                    }
+                    // img {
+                    //     max-height: 200px;
+                    //     max-width: 400px;
+                    // }
                 
                     a {
                         color: orange;
@@ -308,7 +323,7 @@ body {
     }
 }
 
-@media (max-width: 1050px) { 
+@media (max-width: 900px) { 
     .container {
         .grid-box {
             &.grid-box-5 {
