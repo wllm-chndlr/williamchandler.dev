@@ -1,7 +1,5 @@
 <div class="grid-wrap-feature grid-wrap-projects">
   {{#each this.model as |projectCard|}}
-    <div class="project-card-tw">
-      <ProjectCard @project={{projectCard}} />
-    </div>
+      <ProjectCardNew @project={{projectCard}} />
   {{/each}}
 </div>

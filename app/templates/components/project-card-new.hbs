@@ -1,0 +1,35 @@
+{{! template-lint-disable }}
+
+<div class="project-card">
+    <img 
+        class="project-image"
+        src={{this.project.image}} 
+        alt=""
+    >
+    <div class="project-info">
+        <div>
+            <div
+                class="project-title"
+            >
+                {{this.project.title}}
+            </div>
+            <p
+                class="project-desc"
+            >
+                {{this.project.description}}
+            </p>
+        </div>
+        <div class="button-container">
+            <button
+                class="project-button"
+            >
+                <a href={{this.project.url}}>Explore</a>
+            </button>
+            <button
+                class="project-button"        
+            >
+                <a href={{this.project.github}}>Github repo</a>
+            </button>
+        </div>
+    </div>
+</div>
