@@ -1,47 +1,47 @@
 {{! template-lint-disable }}
 
-<div class="container">
-    
+<div class="grid-container">
+
     <div class="grid-box grid-box-1"></div>
-    
+
     <div class="grid-box grid-box-2">
-        <div class="banner banner-2">
+        <div class="banner banner-2 banner-horiz">
             <div class="site-name route-link">
-                {{#link-to "index"}}
+                {{#link-to "index" class="primary-link"}}
                     WILLIAM CHANDLER
                 {{/link-to}}
             </div>
         </div>
     </div>
-    
+
     <div class="grid-box grid-box-3"></div>
-    
+
     <div class="grid-box grid-box-4">
-        <div class="banner banner-4">
+        <div class="banner banner-4 banner-vert">
             {{social-icons}}
         </div>
     </div>
-    
+
     <div class="grid-box grid-box-5">
         {{outlet}}
     </div>
-    
+
     <div class="grid-box grid-box-6">
-        <div class="banner banner-6">
+        <div class="banner banner-6 banner-vert">
             {{nav-links}}
         </div>
     </div>
-    
+
     <div class="grid-box grid-box-7"></div>
-    
+
     <div class="grid-box grid-box-8">
-        <div class="banner banner-8">
+        <div class="banner banner-8 banner-horiz">
             <div class="built-with">
                 Built with Ember + Vanilla CSS
             </div>
         </div>
     </div>
-    
+
     <div class="grid-box grid-box-9"></div>
 
 </div>
