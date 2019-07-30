@@ -28,30 +28,43 @@ a {
     // line-height: 1.5;
 }
 
-body {
-    // height: 100vh;
-    // width: 100vw;
-    // max-height: 100vh;
-    // max-width: 100vw;
-    // min-height: 100vh;
-    // min-width: 100vw;
-    background-color: $base-color;
-    min-height: 100%;
-}
+html, body{
+    min-height: 100vh;
+    min-width: 100vw;
+    // overflow: auto;
+  }
+
+
+
+// html {
+//     height: 100%;
+//     width: 100vw;
+// }
+
+// body {
+//     height: 100vh;
+//     width: 100vw;
+//     // max-height: 100vh;
+//     // max-width: 100vw;
+//     // min-height: 100vh;
+//     // min-width: 100vw;
+//     background-color: $base-color;
+//     min-height: 100vh;
+// }
 
 .grid-container {
     display: grid;
     // font-size: 1rem;
-    // grid-template-columns: 75px 1fr 75px;
-    // grid-template-rows: 75px 1fr 75px;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 1fr 5fr 1fr;
-    height: 100vh;
-    width: 100vw;
-    // max-height: 100vh;
-    // max-width: 100vw;
-    justify-items: stretch;
-    min-height: 100%;
+    grid-template-columns: 75px 1fr 75px;
+    grid-template-rows: 75px 1fr 75px;
+    // grid-template-columns: 1fr 5fr 1fr;
+    // grid-template-rows: 1fr 5fr 1fr;
+    // height: 100vh;
+    // width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
+    // justify-items: stretch;
+    // min-height: 100%;
 
     a {
         text-decoration: none;
@@ -68,6 +81,9 @@ body {
     }
 
     .grid-box {
+        max-width: 100%;
+        max-height: 100%;
+
         .banner {
             align-items: center;
             background: rgb(16, 140, 161);
@@ -77,6 +93,8 @@ body {
             transition: all 0.5s ease;
             z-index: 5;
             border: 2px solid white;
+            box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+
         }
 
         .banner-horiz {
@@ -154,12 +172,13 @@ body {
         justify-content: center;
         // align-items: center;
         overflow-y: auto;
+        max-height: 100%;
         // max-width: 70vw;
         justify-self: center;
         // min-width: 100%;
 
         .grid-wrap-index {
-            color: white;
+            color: $base-color;
             font-size: 4rem;
             flex-direction: row;
             // border: 1px solid #444;
@@ -180,7 +199,7 @@ body {
         .grid-wrap-feature {
             display: grid;
             max-width: 100%;
-            max-height: 100vh;
+            max-height: 100%;
         }
 
         .grid-wrap-projects {
@@ -407,15 +426,33 @@ body {
 
 
 @media (max-width: 900px) {
-    .container {
+    .grid-container {
         // grid-template-columns: 4vw 92vw 4vw;
+        grid-template-columns: 45px 1fr 45px;
+        grid-template-rows: 45px 1fr 45px;
+
+        // .grid-wrap-about {
+        //     grid-template-columns: 1fr;
+
+        // }
 
         .grid-box {
+
+
             &.grid-box-5 {
                 .grid-wrap-projects,
                 .grid-wrap-about,
                 .grid-wrap-index {
-                    // grid-template-columns: 1fr;
+                    grid-template-columns: 1fr;
+                }
+
+                .grid-wrap-index {
+                    font-size: 2rem;
+                    // padding: 0;
+                    // margin: 0;
+                    // height: 100%;
+                    // min-height: 100%;
+                    // height: 100%;
                 }
 
                 .grid-wrap-projects {
@@ -423,13 +460,38 @@ body {
 
                     .project-card {
                         .project-image {
-                            max-height: 165px;
+                            max-height: 140px;
                         }
                     }
                 }
 
             }
 
+            .banner-horiz {
+                max-height: 100%;
+                min-height: 100%;
+                transform: skew(15deg);
+                width: 250px;
+            }
+
+            .banner-vert {
+                transform: skew(0, 15deg);
+                max-width: 100%;
+                min-width: 100%;
+                // width: 75px;
+                height: 200px;
+            }
+
+
+        }
+
+        .grid-box-6 {
+            .banner-6 {
+                height: 24rem;
+            }
+            .nav-link-container {
+                height: 24rem;
+            }
 
         }
 
