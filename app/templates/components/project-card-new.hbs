@@ -1,9 +1,9 @@
 {{! template-lint-disable }}
 
 <div class="project-card">
-    <img 
+    <img
         class="project-image"
-        src={{this.project.image}} 
+        src={{this.project.image}}
         alt=""
     >
     <div class="project-info">
@@ -23,12 +23,24 @@
             <button
                 class="project-button"
             >
-                <a href={{this.project.url}}>Explore</a>
+                <a
+                    target="_blank"
+                    rel="noopener"
+                    href={{this.project.url}}
+                >
+                    Explore
+                </a>
             </button>
             <button
-                class="project-button"        
+                class="project-button"
             >
-                <a href={{this.project.github}}>Github repo</a>
+                <a
+                    target="_blank"
+                    rel="noopener"
+                    href={{this.project.github}}
+                >
+                    Github repo
+                </a>
             </button>
         </div>
     </div>
