@@ -83,7 +83,7 @@ body {
             // box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
 
             &:hover {
-                border: 1px solid $blue;
+                color: 1px solid $blue;
             }
         }
 
@@ -173,7 +173,7 @@ body {
             // color: $base-color;
             color: $font-color;
             display: flex;
-            font-size: 4rem;
+            font-size: 3rem;
             flex-direction: row;
             grid-template-columns: 1fr 1fr;
             max-width: 100%;
@@ -280,7 +280,7 @@ body {
         }
 
         .grid-wrap-about {
-            color: #525252;
+            color: $font-color;
             grid-template-columns: 1fr 1fr;
 
             ul {
@@ -306,7 +306,7 @@ body {
             .bio {
                 border-radius: 1rem;
                 box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
-                background: $font-color;
+                // background: $font-color;
                 margin: 2rem;
             }
 
@@ -316,15 +316,20 @@ body {
 
             .tech-section {
                 margin-bottom: 2rem;
-                background: $font-color;
+                // background: $font-color;
                 // background: rgb(99, 145, 153);
                 // box-shadow: 10px 10px 15px rgb(153, 153, 153);
                 box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
 
-                border: 2px solid #fafafa;
+                // border: 2px solid #fafafa;
                 padding: 2rem;
                 border-radius: 1rem;
-                color: rgb(68, 68, 68);
+                color: $font-color;
+
+                a {
+                    color: $font-color;
+                    text-decoration: underline;
+                }
             }
         }
 
