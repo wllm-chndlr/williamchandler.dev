@@ -1,4 +1,4 @@
-<div class="grid-wrap-feature grid-wrap-index">
+{{!-- <div class="grid-wrap-feature grid-wrap-index">
     <div class="intro">
         I'm Will and I'm a UI developer in Austin, Texas.
     </div>
@@ -9,7 +9,7 @@
             alt="headshot"
         />
     </div>
-</div>
+</div> --}}
 
 {{!-- <div class="wave-container">
     <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -25,3 +25,48 @@
     </g>
     </svg>
 </div> --}}
+
+<div class="parent">
+
+    <div class="index-1">
+        {{#link-to "index" class="primary-link"}}
+            WILLIAM CHANDLER
+        {{/link-to}}
+    </div>
+
+    <div class="index-2">
+        <NavLinks />
+        {{!-- <div class="route route-1">
+            home
+        </div>
+        <div class="route route-2">
+            projects
+        </div>
+        <div class="route route-3">
+            about
+        </div> --}}
+    </div>
+
+    <div class="index-3">
+        <WavyWaves />
+    </div>
+
+    <div class="index-4">
+        <SocialIcons />
+        {{!-- <div class="social social-1">
+            github
+        </div>
+        <div class="social social-2">
+            linkedin
+        </div>
+        <div class="social social-3">
+            twitter
+        </div> --}}
+    </div>
+
+    <div class="index-5">
+        <p>Hi, I'm Will.</p>
+        <p>I'm a UI developer based in Austin, Texas.</p>
+    </div>
+
+</div>
