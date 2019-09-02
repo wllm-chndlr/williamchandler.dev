@@ -1,5 +1,36 @@
-<div class="grid-wrap-feature grid-wrap-projects">
+<div class="project-list">
+
+  {{#each this.model as |project|}}
+    <button
+      class="project-button"
+      {{action "launchProject" project}}
+    >
+      {{project.title}}
+    </button>
+  {{/each}}
+
+</div>
+
+<div class="project-container">
+
+  {{#if projectToDisplay}}
+    {{!-- {{projectToDisplay.title}} --}}
+      <ProjectCardNew @project={{projectToDisplay}} />
+
+  {{else}}
+    select project from list
+  {{/if}}
+
+
+
+  {{!-- <ProjectCardNew @project={{this.model}} /> --}}
+
+</div>
+
+
+
+{{!-- <div class="grid-wrap-feature grid-wrap-projects">
   {{#each this.model as |projectCard|}}
       <ProjectCardNew @project={{projectCard}} />
   {{/each}}
-</div>
+</div> --}}

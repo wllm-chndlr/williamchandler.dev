@@ -4,6 +4,7 @@ export default Route.extend({
     model() {
         return [
             {
+                id: 1,
                 title: 'Top Taco ATX',
                 image: 'assets/images/toptaco.png',
                 description: 'Real-time ratings aggregator for ATX taco joints',
@@ -11,6 +12,7 @@ export default Route.extend({
                 github: 'https://github.com/wllm-chndlr/TopTaco'
             },
             {
+                id: 2,
                 title: 'Simpsons Clicky Game',
                 image: 'assets/images/simpsons.png',
                 description: 'Memory game built with React',
@@ -18,6 +20,7 @@ export default Route.extend({
                 github: 'https://github.com/wllm-chndlr/clicky-game'
             },
             {
+                id: 3,
                 title: 'Rad Drumkit',
                 image: 'assets/images/drumkit.png',
                 description: 'A pretty rad keyboard-based drumkit',
@@ -25,6 +28,7 @@ export default Route.extend({
                 github: 'https://github.com/wllm-chndlr/drumkit'
             },
             {
+                id: 4,
                 title: 'Guac-a-mole',
                 image: 'assets/images/guac.png',
                 description: 'Tex-Mex twist on the classic Whack-a-Mole game',
@@ -32,6 +36,7 @@ export default Route.extend({
                 github: 'https://github.com/wllm-chndlr/guac-a-mole'
             },
             {
+                id: 5,
                 title: 'Birth Works ATX',
                 image: 'assets/images/jsc.png',
                 description: 'Site for Austin-based birth doula and educator',

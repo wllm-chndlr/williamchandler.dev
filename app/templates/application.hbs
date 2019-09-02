@@ -1,3 +1,25 @@
 {{! template-lint-disable }}
 
-{{outlet}}
+<div class="parent">
+
+    <div class="header">
+        {{#link-to "index" class="primary-link"}}
+            WILLIAM CHANDLER
+        {{/link-to}}
+    </div>
+
+    <div class="nav-links">
+        <NavLinks />
+    </div>
+
+    <div class="wavy-waves">
+        <WavyWaves />
+    </div>
+
+    <div class="social-icons">
+        <SocialIcons />
+    </div>
+
+    {{outlet}}
+
+</div>
