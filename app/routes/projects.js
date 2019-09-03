@@ -43,6 +43,14 @@ export default Route.extend({
                 url: 'https://www.birthworksatx.com/',
                 github: 'https://github.com/wllm-chndlr/jsc'
             },
+            // {
+            //     id: 6,
+            //     title: 'Rock & Roll with Ember',
+            //     image: 'assets/images/jsc.png',
+            //     description: 'Site for Austin-based birth doula and educator',
+            //     url: 'https://www.birthworksatx.com/',
+            //     github: 'https://github.com/wllm-chndlr/jsc'
+            // }
         ];
     }
 });

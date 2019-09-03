@@ -1,3 +1,5 @@
+{{! template-lint-disable }}
+
 <div class="project-list">
 
   {{#each this.model as |project|}}
@@ -9,6 +11,14 @@
     </button>
   {{/each}}
 
+  <button
+    class="project-reset-button"
+    {{action "resetProjects" project}}
+  >
+    reset
+  </button>
+
+
 </div>
 
 <div class="project-container">
@@ -16,9 +26,10 @@
   {{#if projectToDisplay}}
     {{!-- {{projectToDisplay.title}} --}}
       <ProjectCardNew @project={{projectToDisplay}} />
-
   {{else}}
-    select project from list
+    <div class="select-project">
+      select project from list
+    </div>
   {{/if}}
 
 

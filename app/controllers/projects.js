@@ -7,6 +7,10 @@ export default Controller.extend({
             console.log(project);
 
             this.set('projectToDisplay', project);
-        }
+        },
+
+        resetProjects() {
+            this.set('projectToDisplay', null);
+        },
     }
 });

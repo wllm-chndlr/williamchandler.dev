@@ -5,6 +5,7 @@ $base-color: #43494b;
 $gray: rgb(33, 36, 36);
 $blue: rgb(65, 199, 199);
 $white: rgb(232, 232, 232);
+$light-gray: rgb(146, 144, 153);
 
 * {
     font-family: 'IBM Plex Mono', monospace;
@@ -54,13 +55,49 @@ a {
     .header {
         align-items: center;
         display: flex;
-        font-size: 3rem;
+        // font-size: 3rem;
         grid-area: 7 / 5 / 8 / 9;
         justify-content: flex-end;
+
+        .primary-link {
+            // animation-duration: 3s;
+            // animation-delay: 2s;
+            font-weight: 900;
+            font-size: 3.5em;
+        }
+
     }
 
     .nav-links {
-        grid-area: 2 / 9 / 4 / 10;
+        grid-area: 2 / 9 / 5 / 10;
+
+        .route-container {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            justify-content: flex-end;
+            // text-align: right;
+            // height: 75%;
+
+            .route-link {
+                margin: 1rem;
+                // max-width: 50px;
+                // transform: rotate(90deg);
+                transition: all 0.5s ease;
+
+                .active {
+                    border-bottom: 1px solid $blue;
+                    font-weight: 900;
+                }
+
+                &:hover {
+                    color: $blue;
+                    // transform: scale(1.1);
+
+                }
+            }
+
+        }
     }
 
     .wavy-waves {
@@ -124,7 +161,7 @@ a {
 
             .fa {
                 color: $white;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 margin: 1rem;
 
                 &:hover {
@@ -136,13 +173,15 @@ a {
     }
 
     .index-headshot {
-        grid-area: 3 / 3 / 5 / 6;
+        grid-area: 3 / 3 / 5 / 5;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
+
 
         .headshot-img {
             max-height: 20vh;
             border-radius: 3px;
+            border: 1px solid $blue;
         }
     }
 
@@ -168,47 +207,48 @@ a {
     }
 
     .about-bio {
-        grid-area: 2 / 2 / 5 / 5;
+        grid-area: 2 / 2 / 5 / 8;
         padding: 1rem;
-        overflow-y: auto;
+        // overflow-y: auto;
+
+        .p-about {
+            margin-bottom: 1rem;
+        }
     }
 
     .about-tech {
-        grid-area: 2 / 5 / 5 / 6;
-    }
-
-    .about-4 {
-        grid-area: 2 / 7 / 3 / 8;
+        grid-area: 5 / 2 / 8 / 3;
     }
 
     .about-conf {
-        grid-area: 6 / 6 / 7 / 8;
+        grid-area: 6 / 5 / 8 / 6;
     }
 
     .about-hack {
-        grid-area: 5 / 5 / 6 / 6;
+        grid-area: 5 / 5 / 8 / 6;
     }
 
     .about-pres {
-        grid-area: 4 / 6 / 6 / 8;
+        grid-area: 5 / 3 / 8 / 5;
     }
 
     .about-edu {
-        grid-area: 2 / 6 / 5 / 8;
+        grid-area: 5 / 6 / 8 / 8;
     }
 
     .project-list {
         display: flex;
         flex-direction: column;
-        grid-area: 2 / 2 / 5 / 5;
+        grid-area: 2 / 2 / 5 / 4;
 
         .project-button {
             background: transparent;
-            border: 1px solid $white;
+            border: 1px solid $light-gray;
             border-radius: 3px;
             color: $white;
+            font-size: 1rem;
             margin-bottom: 1rem;
-            max-width: 150px;
+            max-width: 250px;
             padding: 1rem;
             text-align: left;
             transition: all 0.5s ease;
@@ -216,10 +256,28 @@ a {
 
             &:hover {
                 background: $white;
+                border: 1px solid $white;
                 color: $gray;
+            }
+        }
 
-                a {
-                }
+        .project-reset-button {
+            background: transparent;
+            // border: 1px solid $blue;
+            border: none;
+            // border-radius: 3px;
+            color: $white;
+            font-size: 0.75rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+            max-width: 250px;
+            padding: 1rem;
+            text-align: right;
+            transition: all 0.5s ease;
+            cursor: pointer;
+
+            &:hover {
+                color: $blue;
             }
         }
 
@@ -227,37 +285,18 @@ a {
 
     .project-container {
         grid-area: 2 / 4 / 6 / 8;
-        // border: 1px solid $blue;
         border-radius: 3px;
-        padding: 1rem;
 
-    }
-
-    .route-container {
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-        justify-content: center;
-        text-align: right;
-        height: 100%;
-
-        .route-link {
-            margin: 1rem;
-
-            .active {
-                border-bottom: 1px solid $blue;
-                font-weight: 900;
-            }
-            transition: all 0.5s ease;
-
-            &:hover {
-                color: $blue;
-                transform: scale(1.1);
-
-            }
+        .select-project {
+            display: flex;
+            align-items: center;
+            font-style: italic;
+            justify-content: center;
+            height: 50%;
         }
-
     }
+
+
 
     .tech-section {
         border: 1px solid $blue;
@@ -280,9 +319,9 @@ a {
         .project-image {
             // border-top-left-radius: 1rem;
             // border-top-right-radius: 1rem;
-            max-height: 300px;
-            max-width: 600px;
-            border: 1px solid $white;
+            max-height: 250px;
+            max-width: 500px;
+            border: 1px solid $light-gray;
             border-radius: 3px;
         }
 
@@ -307,12 +346,12 @@ a {
 
             .button-container {
                 display: flex;
-                justify-content: flex-end;
+                // justify-content: flex-end;
                 margin-bottom: 1rem;
 
                 .project-button {
                     background: $gray;
-                    border: 1px solid white;
+                    border: 1px solid $light-gray;
                     border-radius: 3px;
                     font-size: 1rem;
                     margin: 0.25rem;
