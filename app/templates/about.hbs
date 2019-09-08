@@ -12,6 +12,33 @@
     <p class="p-about">I completed a full stack web development bootcamp through UT Austin, and now I'm a UI developer. I love creating things and making them look awesome. The constant challenge keeps me motivated.</p>
 </div>
 
+<div class="info-list">
+  {{#each this.model as |info|}}
+    <button
+      class="project-button"
+      {{action "launchInfo" info}}
+    >
+      {{info.title}}
+    </button>
+  {{/each}}
+
+</div>
+
+<div class="info-container">
+    {{!-- {{infoToDisplay.items}} --}}
+
+    {{#if infoToDisplay}}
+        <InfoCard @info={{infoToDisplay}} />
+    {{else}}
+        <div class="select-project">
+            select info from list
+        </div>
+    {{/if}}
+
+</div>
+
+
+{{!--
 <div class="about-tech">
     <div class="tech-section">
         <h3>Tech</h3>
@@ -81,7 +108,7 @@
 
         </ul>
     </div>
-</div>
+</div> --}}
 
 
 

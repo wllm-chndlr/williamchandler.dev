@@ -1,0 +1,36 @@
+{{! template-lint-disable }}
+
+<div class="info-card">
+    <div class="info-items">
+        {{#each this.info.items as |item|}}
+        <li>
+            {{#if item.title}}
+                <a
+                    href={{item.url}}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    class="main-link"
+                >
+                    {{item.title}}
+                </a>
+                <br/>
+                {{item.event}}
+                <br/>
+                {{item.date}}
+
+            {{else}}
+                -{{item}}
+
+            {{/if}}
+
+        </li>
+        {{/each}}
+    </div>
+    {{#if this.info.image}}
+        <img
+            class="info-image"
+            src={{this.info.image}}
+            alt=""
+        >
+    {{/if}}
+</div>
