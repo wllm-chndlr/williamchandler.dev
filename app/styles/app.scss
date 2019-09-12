@@ -211,6 +211,7 @@ a {
 
     .about-bio {
         grid-area: 2 / 2 / 5 / 8;
+        display: grid;
         // padding: 1rem;
         // overflow-y: auto;
 
@@ -264,6 +265,11 @@ a {
             .info-items {
                 list-style: none;
                 width: 100%;
+
+                li {
+                    border-left: 1px solid $blue;
+                    max-width: 150px;
+                }
             }
 
             .info-image {
@@ -349,7 +355,7 @@ a {
 
         .project-image {
             max-height: 250px;
-            max-width: 100%;
+            max-width: 500px;
             border: 1px solid $light-gray;
             border-radius: 3px;
         }
