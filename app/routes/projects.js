@@ -43,6 +43,54 @@ export default Route.extend({
                 url: 'https://www.birthworksatx.com/',
                 github: 'https://github.com/wllm-chndlr/jsc'
             },
+            {
+                id: 6,
+                title: 'Canvasketch',
+                image: 'assets/images/canvas.png',
+                description: 'HTML5 canvas drawing fun',
+                url: 'https://wllm-chndlr.github.io/canvasketch/',
+                github: 'https://github.com/wllm-chndlr/canvasketch'
+            },
+            {
+                id: 7,
+                title: 'SuperRentals',
+                image: 'assets/images/rentals.png',
+                description: 'Home rentals page built with Ember.js',
+                url: 'https://youthful-bardeen-842f6d.netlify.com/',
+                github: 'https://github.com/wllm-chndlr/super-rentals'
+            },
+            {
+                id: 8,
+                title: 'GIFGrub',
+                image: 'assets/images/grub.png',
+                description: 'A showcase of super-delish food GIFs',
+                url: 'https://wllm-chndlr.github.io/GIFgrub/',
+                github: 'https://github.com/wllm-chndlr/GIFgrub'
+            },
+            {
+                id: 9,
+                title: 'Lebowski Hangman',
+                image: 'assets/images/hangman.png',
+                description: 'Classic hangman game based on The Big Lebowski',
+                url: 'https://wllm-chndlr.github.io/Lebowski-Hangman/',
+                github: 'https://github.com/wllm-chndlr/Lebowski-Hangman'
+            },
+            {
+                id: 10,
+                title: 'Astronomy Trivia',
+                image: 'assets/images/astronomy.png',
+                description: 'Test your knowledge of our universe, and try not to get blown out into space!',
+                url: 'https://wllm-chndlr.github.io/Astronomy-Trivia/',
+                github: 'https://github.com/wllm-chndlr/Astronomy-Trivia'
+            },
+            {
+                id: 11,
+                title: 'Shyny Crystalz',
+                image: 'assets/images/crystalz.png',
+                description: 'Magic crystalz + math = fun',
+                url: 'https://wllm-chndlr.github.io/shyny-crystalz/',
+                github: 'https://github.com/wllm-chndlr/shyny-crystalz'
+            },
             // {
             //     id: 6,
             //     title: 'Rock & Roll with Ember',
