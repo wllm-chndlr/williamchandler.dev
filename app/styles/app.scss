@@ -196,19 +196,6 @@ a {
         grid-area: 3 / 5 / 5 / 9;
     }
 
-    // .index-greeting-1 {
-    // }
-
-    // .index-greeting-2 {
-    //     grid-area: 4 / 5 / 6 / 9;
-    // }
-
-    .about-1 {
-        grid-area: 5 / 1 / 6 / 8;
-        max-height: 100px;
-        display: flex;
-    }
-
     .about-bio {
         grid-area: 2 / 2 / 7 / 5;
         display: grid;
@@ -218,26 +205,6 @@ a {
         .p-about {
             margin-bottom: 1rem;
         }
-    }
-
-    .about-tech {
-        grid-area: 5 / 2 / 8 / 3;
-    }
-
-    .about-conf {
-        grid-area: 6 / 5 / 8 / 6;
-    }
-
-    .about-hack {
-        grid-area: 5 / 5 / 8 / 6;
-    }
-
-    .about-pres {
-        grid-area: 5 / 3 / 8 / 5;
-    }
-
-    .about-edu {
-        grid-area: 5 / 6 / 8 / 8;
     }
 
     .info-list {
@@ -282,6 +249,105 @@ a {
         }
     }
 
+    .project-list {
+        display: flex;
+        flex-direction: column;
+        grid-area: 2 / 2 / 7 / 4;
+        overflow-y: auto;
+    }
+
+    .project-container {
+        grid-area: 2 / 4 / 6 / 8;
+        border-radius: 3px;
+
+        .select-project {
+            display: flex;
+            align-items: center;
+            font-style: italic;
+            justify-content: center;
+            height: 50%;
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            transition: all 0.15s ease;
+
+            .project-image {
+                // max-height: 250px;
+                max-height: 100%;
+                // max-width: 500px;
+                max-width: 100%;
+                border: 1px solid $light-gray;
+                border-radius: 3px;
+            }
+
+            .project-info {
+                padding: 1rem;
+
+                a {
+                    color: $white;
+                }
+
+                .project-title {
+                    font-size: 1.5rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                .project-desc {
+                    margin-bottom: 1rem;
+                    min-height: 50px;
+                }
+
+                .button-container {
+                    display: flex;
+                    margin-bottom: 1rem;
+
+                    .project-button {
+                        background: $gray;
+                        border: 1px solid $light-gray;
+                        border-radius: 3px;
+                        font-size: 1rem;
+                        margin: 0.25rem;
+                        padding: 0.5rem;
+                        transition: all 0.45s ease;
+
+                        a {
+                            min-height: 100%;
+                        }
+
+
+                        &:hover {
+                            background: $white;
+
+                            a {
+                                color: $gray;
+                            }
+                        }
+
+                        &:active {
+
+                            transform: translateY(0.5px);
+                        }
+
+                        &:focus { outline: none; }
+                    }
+                }
+            }
+        }
+    }
+
+    .tech-section {
+        border: 1px solid $blue;
+        border-radius: 5px;
+        margin: 0.5rem;
+        padding: 1rem;
+
+        ul {
+            margin-left: 1.5rem;
+        }
+    }
+
     .project-button {
         background: transparent;
         border: 1px solid $light-gray;
@@ -302,120 +368,8 @@ a {
         }
     }
 
-    .project-list {
-        display: flex;
-        flex-direction: column;
-        grid-area: 2 / 2 / 7 / 4;
-        overflow-y: auto;
-
-        .project-reset-button {
-            background: transparent;
-            border: none;
-            color: $white;
-            font-size: 0.75rem;
-            font-style: italic;
-            margin-bottom: 1rem;
-            max-width: 250px;
-            padding: 1rem;
-            text-align: right;
-            transition: all 0.5s ease;
-            cursor: pointer;
-
-            &:hover {
-                color: $blue;
-            }
-        }
-
-    }
-
-    .project-container {
-        grid-area: 2 / 4 / 6 / 8;
-        border-radius: 3px;
-
-        .select-project {
-            display: flex;
-            align-items: center;
-            font-style: italic;
-            justify-content: center;
-            height: 50%;
-        }
-    }
-
-    .tech-section {
-        border: 1px solid $blue;
-        border-radius: 5px;
-        margin: 0.5rem;
-        padding: 1rem;
-
-        ul {
-            margin-left: 1.5rem;
-        }
-    }
-
-    .project-card {
-        display: flex;
-        flex-direction: column;
-        transition: all 0.15s ease;
-
-        .project-image {
-            max-height: 250px;
-            max-width: 500px;
-            border: 1px solid $light-gray;
-            border-radius: 3px;
-        }
-
-        .project-info {
-            padding: 1rem;
-
-            a {
-                color: $white;
-            }
-
-            .project-title {
-                font-size: 1.5rem;
-                margin-bottom: 0.5rem;
-            }
-
-            .project-desc {
-                margin-bottom: 1rem;
-                min-height: 50px;
-            }
-
-            .button-container {
-                display: flex;
-                margin-bottom: 1rem;
-
-                .project-button {
-                    background: $gray;
-                    border: 1px solid $light-gray;
-                    border-radius: 3px;
-                    font-size: 1rem;
-                    margin: 0.25rem;
-                    padding: 0.5rem;
-                    transition: all 0.45s ease;
-
-                    a {
-                        min-height: 100%;
-                    }
-
-
-                    &:hover {
-                        background: $white;
-
-                        a {
-                            color: $gray;
-                        }
-                    }
-
-                    &:active {
-
-                        transform: translateY(0.5px);
-                    }
-
-                    &:focus { outline: none; }
-                }
-            }
-        }
+    .reset-button {
+        background: orangered;
     }
 
     .button-ghost {
@@ -435,7 +389,6 @@ a {
             color: $blue;
         }
     }
-
 }
 
 
