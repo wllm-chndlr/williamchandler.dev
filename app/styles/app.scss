@@ -200,7 +200,7 @@ a {
         grid-area: 2 / 2 / 7 / 5;
         display: grid;
         // padding: 1rem;
-        // overflow-y: auto;
+        overflow-y: auto;
 
         .p-about {
             margin-bottom: 1rem;
@@ -259,6 +259,7 @@ a {
     .project-container {
         grid-area: 2 / 4 / 6 / 8;
         border-radius: 3px;
+        margin-left: 2rem;
 
         .select-project {
             display: flex;
@@ -369,7 +370,14 @@ a {
     }
 
     .reset-button {
-        background: orangered;
+        color: orangered;
+        background: $gray;
+        border: none;
+        &:hover {
+            background: $gray;
+            border: none;
+            color: orange
+        }
     }
 
     .button-ghost {
@@ -408,6 +416,10 @@ a {
                 // max-width: 100%;
                 // height: 100%;
             }
+        }
+
+        .index-greeting {
+            font-size: 2rem;
         }
 
     }
@@ -457,13 +469,13 @@ a {
         }
 
         .index-headshot {
-            grid-area: 3 / 7 / 4 / 9;
+            grid-area: 2 / 6 / 4 / 9;
 
-            .headshot-img {
-                width: 100%;
-                border-radius: 3px;
-                border: 1px solid $blue;
-            }
+            // .headshot-img {
+            //     width: 100%;
+            //     border-radius: 3px;
+            //     border: 1px solid $blue;
+            // }
         }
 
         .index-greeting {
