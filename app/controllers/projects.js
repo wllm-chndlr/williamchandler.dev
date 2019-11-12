@@ -1,11 +1,9 @@
 import Controller from '@ember/controller';
+// import { computed } from '@ember/object';
 
 export default Controller.extend({
-
     actions: {
         launchProject(project) {
-            console.log(project);
-
             this.set('projectToDisplay', project);
         },
 
