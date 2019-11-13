@@ -513,7 +513,7 @@ a {
 
             .project-button,
             .info-button {
-                font-size: 0.75rem;
+                // font-size: 0.75rem;
                 margin-right: 0.5rem;
                 padding: 0.5rem;
             }
@@ -533,7 +533,7 @@ a {
         }
 
         .info-container {
-            font-size: 0.75rem;
+            font-size: 1rem;
             grid-area: 5 / 6 / 7 / 9;
             margin-top: 0;
         }
@@ -545,7 +545,7 @@ a {
         .about-bio {
             grid-area: 2 / 2 / 5 / 9;
             overflow-y: auto;
-            font-size: 0.75rem;
+            font-size: 1rem;
             margin-bottom: 2rem;
 
         }
