@@ -6,4 +6,5 @@ export default DS.Model.extend({
     image: DS.attr(),
     url: DS.attr(),
     category: DS.attr(),
+    active: DS.attr('boolean', { defaultValue: false }),
 });
