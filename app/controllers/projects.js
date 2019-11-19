@@ -7,7 +7,7 @@ export default Controller.extend({
     actions: {
         launchProject(project) {
             this.set('projectToDisplay', project);
-            project.toggleProperty('active');
+            // project.toggleProperty('active');
         },
 
         resetProjects() {

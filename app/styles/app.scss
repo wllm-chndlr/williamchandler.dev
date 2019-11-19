@@ -429,11 +429,15 @@ a {
         }
 
         .project-list {
+            // border: 1px solid $white;
             flex-direction: row;
+            align-items: center;
             grid-area: 2 / 2 / 3 / 9;
 
             .project-button {
-                margin-right: 1rem;
+                // margin-right: 1rem;
+                margin: 1rem;
+                max-height: 75%;
                 min-width: 200px;
             }
         }
