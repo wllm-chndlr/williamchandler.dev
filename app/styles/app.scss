@@ -517,18 +517,28 @@ a {
 
             .project-button,
             .info-button {
-                // font-size: 0.75rem;
-                margin-right: 0.5rem;
+                font-size: 0.75rem;
+                // margin-right: 0.5rem;
                 padding: 0.5rem;
             }
         }
 
         .project-list {
             margin: 1rem 0;
+            overflow-y: hidden;
 
             .project-button {
+                margin: 0 .5rem 0 0;
+                min-height: 75%;
                 min-width: 150px;
-                font-size: 1rem;
+            }
+        }
+
+        .project-container {
+            grid-area: 3 / 2 / 6 / 9;
+
+            .project-button {
+                font-size: 0.75rem;
             }
         }
 
@@ -537,25 +547,26 @@ a {
         }
 
         .info-container {
-            font-size: 1rem;
+            font-size: 0.75rem;
             grid-area: 5 / 6 / 7 / 9;
             margin-top: 0;
-        }
 
-        .project-container {
-            grid-area: 3 / 2 / 6 / 9;
+            li {
+                margin-bottom: .5rem;
+            }
         }
 
         .about-bio {
             grid-area: 2 / 2 / 5 / 9;
             overflow-y: auto;
-            font-size: 1rem;
+            font-size: 0.75rem;
             margin-bottom: 2rem;
+            margin-top: .5rem;
 
         }
 
         .project-button {
-            margin-bottom: 0.5rem;
+            // margin-bottom: 0.5rem;
         }
     }
 }
