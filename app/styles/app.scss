@@ -537,8 +537,10 @@ a {
         .project-container {
             grid-area: 3 / 2 / 6 / 9;
 
-            .project-button {
-                font-size: 0.75rem;
+            .project-card {
+                a {
+                    font-size: 0.75rem;
+                }
             }
         }
 
