@@ -9,7 +9,8 @@ export default Route.extend({
                 image: 'assets/images/toptaco.png',
                 description: 'Real-time ratings aggregator for ATX taco joints',
                 url: 'https://wllm-chndlr.github.io/TopTaco/',
-                github: 'https://github.com/wllm-chndlr/TopTaco'
+                github: 'https://github.com/wllm-chndlr/TopTaco',
+                isSelected: true,
             },
             {
                 id: 2,
