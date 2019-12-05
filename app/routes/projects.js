@@ -101,5 +101,12 @@ export default Route.extend({
             //     github: 'https://github.com/wllm-chndlr/jsc'
             // }
         ];
-    }
+    },
+
+    setupController(controller, model) {
+        debugger
+        controller.setProperties({
+            model,
+        });
+    },
 });
