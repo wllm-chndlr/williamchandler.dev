@@ -2,7 +2,7 @@ import Controller from '@ember/controller';
 // import { computed } from '@ember/object';
 
 export default Controller.extend({
-    // classNameBindings: ['activeProject'],
+    // classNameBindings: ['selectedProject'],
 
     actions: {
         launchProject(project) {

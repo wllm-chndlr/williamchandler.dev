@@ -4,6 +4,14 @@ export default Route.extend({
     model() {
         return [
             {
+                id: 9,
+                title: 'Lebowski Hangman',
+                image: 'assets/images/hangman.png',
+                description: 'Classic hangman game based on The Big Lebowski',
+                url: 'https://wllm-chndlr.github.io/Lebowski-Hangman/',
+                github: 'https://github.com/wllm-chndlr/Lebowski-Hangman'
+            },
+            {
                 id: 1,
                 title: 'Top Taco ATX',
                 image: 'assets/images/toptaco.png',
@@ -69,14 +77,6 @@ export default Route.extend({
                 github: 'https://github.com/wllm-chndlr/GIFgrub'
             },
             {
-                id: 9,
-                title: 'Lebowski Hangman',
-                image: 'assets/images/hangman.png',
-                description: 'Classic hangman game based on The Big Lebowski',
-                url: 'https://wllm-chndlr.github.io/Lebowski-Hangman/',
-                github: 'https://github.com/wllm-chndlr/Lebowski-Hangman'
-            },
-            {
                 id: 10,
                 title: 'Astronomy Trivia',
                 image: 'assets/images/astronomy.png',
@@ -104,9 +104,9 @@ export default Route.extend({
     },
 
     setupController(controller, model) {
-        debugger
         controller.setProperties({
             model,
+            selectedProject: model.get('firstObject'),
         });
     },
 });

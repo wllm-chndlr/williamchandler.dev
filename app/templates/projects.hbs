@@ -11,28 +11,15 @@
     </button>
   {{/each}}
 
-  <button
-    class="project-button reset-button"
-    {{action "resetProjects" project}}
-  >
-    reset
-  </button>
 </div>
 
 <div class="project-container">
 
   {{#if projectToDisplay}}
-    {{!-- {{projectToDisplay.title}} --}}
       <ProjectCardNew @project={{projectToDisplay}} />
   {{else}}
-    <div class="select-project">
-      select project from list
-    </div>
+      <ProjectCardNew @project={{selectedProject}} />
   {{/if}}
-
-
-
-  {{!-- <ProjectCardNew @project={{this.model}} /> --}}
 
 </div>
 
