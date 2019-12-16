@@ -255,6 +255,13 @@ a {
         flex-direction: column;
         grid-area: 2 / 2 / 7 / 4;
         overflow-y: auto;
+
+        .project-button {
+            &.active {
+                color: $gray;
+                background: $white;
+            }
+        }
     }
 
     .project-container {
@@ -319,7 +326,6 @@ a {
                             min-height: 100%;
                         }
 
-
                         &:hover {
                             background: $white;
 
@@ -329,7 +335,6 @@ a {
                         }
 
                         &:active {
-
                             transform: translateY(0.5px);
                         }
 

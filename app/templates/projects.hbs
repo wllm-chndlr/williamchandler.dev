@@ -4,7 +4,7 @@
 
   {{#each this.model as |project|}}
     <button
-      class="project-button {{if project.active "active"}}"
+      class="project-button {{if (eq projectToDisplay project) "active"}}"
       {{action "launchProject" project}}
     >
       {{project.title}}

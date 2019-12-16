@@ -4,6 +4,11 @@ import Controller from '@ember/controller';
 export default Controller.extend({
     // classNameBindings: ['selectedProject'],
 
+    didRender() {
+        debugger
+        this.element.querySelector('.project-button .active');
+    },
+
     actions: {
         launchProject(project) {
             this.set('projectToDisplay', project);
