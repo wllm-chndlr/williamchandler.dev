@@ -11,15 +11,15 @@ export default Route.extend({
                 url: 'https://wllm-chndlr.github.io/Lebowski-Hangman/',
                 github: 'https://github.com/wllm-chndlr/Lebowski-Hangman'
             },
-            {
-                id: 1,
-                title: 'Top Taco ATX',
-                image: 'assets/images/toptaco.png',
-                description: 'Real-time ratings aggregator for ATX taco joints',
-                url: 'https://wllm-chndlr.github.io/TopTaco/',
-                github: 'https://github.com/wllm-chndlr/TopTaco',
-                isSelected: true,
-            },
+            // {
+            //     id: 1,
+            //     title: 'Top Taco ATX',
+            //     image: 'assets/images/toptaco.png',
+            //     description: 'Real-time ratings aggregator for ATX taco joints',
+            //     url: 'https://wllm-chndlr.github.io/TopTaco/',
+            //     github: 'https://github.com/wllm-chndlr/TopTaco',
+            //     isSelected: true,
+            // },
             {
                 id: 2,
                 title: 'Simpsons Clicky Game',
@@ -31,7 +31,7 @@ export default Route.extend({
             {
                 id: 3,
                 title: 'Rad Drumkit',
-                image: 'assets/images/drumkit.png',
+                image: 'https://res.cloudinary.com/dkig5jdyj/image/upload/c_scale,w_676/v1553189709/drumkit(g).png',
                 description: 'A pretty rad keyboard-based drumkit',
                 url: 'https://wllm-chndlr.github.io/drumkit/',
                 github: 'https://github.com/wllm-chndlr/drumkit'
