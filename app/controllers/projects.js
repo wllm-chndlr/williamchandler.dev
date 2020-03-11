@@ -5,7 +5,6 @@ export default Controller.extend({
     // classNameBindings: ['selectedProject'],
 
     didRender() {
-        debugger
         this.element.querySelector('.project-button .active');
     },
 
