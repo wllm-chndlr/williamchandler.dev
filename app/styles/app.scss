@@ -264,6 +264,10 @@ a {
                 background: $white;
             }
         }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     .project-container {
@@ -440,6 +444,10 @@ a {
             flex-direction: row;
             align-items: center;
             grid-area: 2 / 2 / 3 / 9;
+
+            ::-webkit-scrollbar {
+                display: none;
+            }
 
             .project-button {
                 // margin-right: 1rem;

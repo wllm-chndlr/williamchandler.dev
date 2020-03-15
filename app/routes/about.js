@@ -55,9 +55,17 @@ export default Route.extend({
                     'BA, Spanish, Davidson College',
                 ],
             },
-
+            // {
+            //     id: 5,
+            //     title: 'Resume',
+            //     items: [
+            //         'Check it out'
+            //     ],
+            // },
         ]
+    },
 
-
-    }
+    setupController(controller, model) {
+        controller.set('infoToLoad', model.get('firstObject'));
+    },
 });

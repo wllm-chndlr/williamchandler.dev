@@ -1,7 +1,6 @@
 {{! template-lint-disable }}
 
 <div class="project-list">
-
   {{#each this.model as |project|}}
     <button
       class="project-button {{if (eq projectToDisplay project) "active"}}"
@@ -10,23 +9,12 @@
       {{project.title}}
     </button>
   {{/each}}
-
 </div>
 
 <div class="project-container">
-
   {{#if projectToDisplay}}
       <ProjectCardNew @project={{projectToDisplay}} />
   {{else}}
       <ProjectCardNew @project={{selectedProject}} />
   {{/if}}
-
 </div>
-
-
-
-{{!-- <div class="grid-wrap-feature grid-wrap-projects">
-  {{#each this.model as |projectCard|}}
-      <ProjectCardNew @project={{projectCard}} />
-  {{/each}}
-</div> --}}

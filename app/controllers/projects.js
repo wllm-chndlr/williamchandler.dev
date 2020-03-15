@@ -5,7 +5,7 @@ export default Controller.extend({
     // classNameBindings: ['selectedProject'],
 
     didRender() {
-        this.element.querySelector('.project-button .active');
+        this.element.querySelectorAll('.project-button');
     },
 
     actions: {
