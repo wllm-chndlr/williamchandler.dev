@@ -18,6 +18,11 @@ body {
     border: 5px solid $blue;
     height: calc(100% - 10px);
     width: calc(100% - 10px);
+    overflow: hidden;
+}
+
+.project-list::-webkit-scrollbar {
+    display: none;
 }
 
 a {
