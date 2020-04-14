@@ -13,6 +13,14 @@ export default Route.extend({
                 projectToDisplay: true,
             },
             {
+                id: 12,
+                title: 'Expense Tracker',
+                image: 'assets/images/expense-tracker.png',
+                description: 'Expense and income tracker built with React Hooks',
+                url: 'https://wllm-chndlr.github.io/expense-tracker/',
+                github: 'https://github.com/wllm-chndlr/expense-tracker',
+            },
+            {
                 id: 9,
                 title: 'Lebowski Hangman',
                 image: 'assets/images/hangman.png',
