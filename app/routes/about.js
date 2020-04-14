@@ -65,7 +65,7 @@ export default Route.extend({
         ]
     },
 
-    setupController(controller, model) {
-        controller.set('infoToLoad', model.get('firstObject'));
-    },
+    // setupController(controller, model) {
+    //     controller.set('infoToLoad', model.get('firstObject'));
+    // },
 });
