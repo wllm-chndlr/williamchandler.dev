@@ -55,17 +55,16 @@ export default Route.extend({
                     'BA, Spanish, Davidson College',
                 ],
             },
-            // {
-            //     id: 5,
-            //     title: 'Resume',
-            //     items: [
-            //         'Check it out'
-            //     ],
-            // },
+            {
+                id: 5,
+                title: 'Resume',
+                items: [
+                    {
+                        blurb: 'Check it out',
+                        link: 'assets/docs/william_chandler_resume.pdf'
+                    }
+                ],
+            },
         ]
     },
-
-    // setupController(controller, model) {
-    //     controller.set('infoToLoad', model.get('firstObject'));
-    // },
 });

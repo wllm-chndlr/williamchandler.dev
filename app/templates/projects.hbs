@@ -13,8 +13,8 @@
 
 <div class="project-container">
   {{#if projectToDisplay}}
-      <ProjectCardNew @project={{projectToDisplay}} />
+      <ProjectCard @project={{projectToDisplay}} />
   {{else}}
-      <ProjectCardNew @project={{selectedProject}} />
+      <ProjectCard @project={{selectedProject}} />
   {{/if}}
 </div>

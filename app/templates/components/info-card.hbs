@@ -18,11 +18,18 @@
                 <br/>
                 {{item.date}}
 
+            {{else if item.blurb}}
+                <a
+                    href={{item.link}}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    class="main-link"
+                >
+                    {{item.blurb}}
+                </a>
             {{else}}
                 {{item}}
-
             {{/if}}
-
         </li>
         {{/each}}
     </div>
