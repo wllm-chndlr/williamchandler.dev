@@ -123,7 +123,7 @@ export default Route.extend({
     setupController(controller, model) {
         controller.setProperties({
             model,
-            selectedProject: model.get('firstObject'),
+            projectToDisplay: model.get('firstObject'),
         });
     },
 });

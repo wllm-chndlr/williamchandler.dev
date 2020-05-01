@@ -32,7 +32,6 @@ a {
 
     &:hover {
         color: $blue;
-        // transform: scale(1.2);
         transition: all 0.5s ease;
     }
 
@@ -60,13 +59,10 @@ a {
     .header {
         align-items: center;
         display: flex;
-        // font-size: 3rem;
         grid-area: 7 / 3 / 8 / 9;
         justify-content: flex-end;
 
         .primary-link {
-            // animation-duration: 3s;
-            // animation-delay: 2s;
             font-weight: 900;
             font-size: 3.5em;
             z-index: 10;
@@ -82,13 +78,9 @@ a {
             align-items: flex-end;
             flex-direction: column;
             justify-content: flex-end;
-            // text-align: right;
-            // height: 75%;
 
             .route-link {
                 margin: 1rem;
-                // max-width: 50px;
-                // transform: rotate(90deg);
                 transition: all 0.5s ease;
 
                 .active {
@@ -98,11 +90,8 @@ a {
 
                 &:hover {
                     color: $blue;
-                    // transform: scale(1.1);
-
                 }
             }
-
         }
     }
 
@@ -111,7 +100,6 @@ a {
         z-index: 5;
 
         .wave-container {
-            // background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
             background: $gray;
             min-height:100px;
             max-height:100px;
@@ -198,14 +186,12 @@ a {
         flex-direction: column;
         justify-content: space-around;
         font-size: 3rem;
-        // justify-content: center;
         grid-area: 3 / 5 / 5 / 9;
     }
 
     .about-bio {
         grid-area: 2 / 2 / 7 / 5;
         display: grid;
-        // padding: 1rem;
         overflow-y: auto;
 
         .p-about {
@@ -226,6 +212,7 @@ a {
     .info-container {
         grid-area: 4 / 6 / 7 / 9;
         margin-top: 1rem;
+        overflow-y: auto;
 
         ul {
             margin-top: 1rem;
@@ -246,7 +233,6 @@ a {
                 li {
                     border-left: 1px solid $blue;
                     padding-left: 6px;
-                    // max-width: 150px;
                 }
             }
 
@@ -294,10 +280,7 @@ a {
             transition: all 0.15s ease;
 
             .project-image {
-                // max-height: 250px;
-                // max-height: 100%;
                 width: 500px;
-                // max-width: 85%;
                 max-width: 100%;
                 border: 1px solid $light-gray;
                 border-radius: 3px;
@@ -414,29 +397,20 @@ a {
         transition: all 1s ease;
         cursor: pointer;
 
-
         &:hover {
             color: $blue;
         }
     }
 }
 
-
 @media (max-width: 840px) {
-
     .parent {
         .header {
-            // grid-area: 1 / 6 / 2 / 10;
-            // z-index: 100;
             grid-area: 7 / 3 / 8 / 9;
 
             .primary-link {
                 color: $white;
                 font-size: 2.5rem;
-                // margin-right: 1rem;
-                // margin-top: 1rem;
-                // max-width: 100%;
-                // height: 100%;
             }
         }
 
@@ -445,7 +419,6 @@ a {
         }
 
         .project-list {
-            // border: 1px solid $white;
             flex-direction: row;
             align-items: center;
             grid-area: 2 / 2 / 3 / 9;
@@ -455,7 +428,6 @@ a {
             }
 
             .project-button {
-                // margin-right: 1rem;
                 margin: 1rem;
                 max-height: 75%;
                 min-width: 200px;
@@ -465,19 +437,12 @@ a {
         .project-container {
             grid-area: 3 / 2 / 7 / 9;
             margin-left: 0;
-
         }
-
     }
-
-
 }
 
-
 @media (max-width: 640px) {
-
     .parent {
-
         .header {
             grid-area: 1 / 6 / 2 / 10;
             z-index: 100;
@@ -517,12 +482,6 @@ a {
 
         .index-headshot {
             grid-area: 2 / 6 / 4 / 9;
-
-            // .headshot-img {
-            //     width: 100%;
-            //     border-radius: 3px;
-            //     border: 1px solid $blue;
-            // }
         }
 
         .index-greeting {
@@ -539,7 +498,6 @@ a {
             .project-button,
             .info-button {
                 font-size: 0.75rem;
-                // margin-right: 0.5rem;
                 padding: 0.5rem;
             }
         }
@@ -586,10 +544,6 @@ a {
             margin-bottom: 2rem;
             margin-top: .5rem;
 
-        }
-
-        .project-button {
-            // margin-bottom: 0.5rem;
         }
     }
 }
