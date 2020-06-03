@@ -4,13 +4,21 @@ export default Route.extend({
     model() {
         return [
             {
+                id: 13,
+                title: 'Ember Animated',
+                image: 'assets/images/animated.png',
+                description: 'Showcase of animations created with Ember Animated',
+                url: 'https://ember-animated.netlify.app/',
+                github: 'https://github.com/wllm-chndlr/anima',
+                projectToDisplay: true,
+            },
+            {
                 id: 1,
                 title: 'Hoox User Management',
                 image: 'assets/images/hoox.png',
                 description: 'Fast, responsive CRUD app built with React Hooks',
                 url: 'https://wllm-chndlr.github.io/hoox/',
                 github: 'https://github.com/wllm-chndlr/hoox',
-                projectToDisplay: true,
             },
             {
                 id: 12,
