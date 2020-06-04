@@ -67,4 +67,11 @@ export default Route.extend({
             },
         ]
     },
+
+    setupController(controller, model) {
+        controller.setProperties({
+            model,
+            infoToDisplay: model.get('firstObject'),
+        });
+    },
 });

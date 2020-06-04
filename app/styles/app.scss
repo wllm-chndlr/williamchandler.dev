@@ -204,8 +204,11 @@ a {
         flex-direction: column;
         grid-area: 2 / 6 / 5 / 8;
 
-        .info-button {
-            color: $white;
+        .about-button {
+            &.active {
+                color: $gray;
+                background: $white;
+            }
         }
     }
 
