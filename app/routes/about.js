@@ -60,7 +60,7 @@ export default Route.extend({
                 title: 'Resume',
                 items: [
                     {
-                        blurb: 'Check it out',
+                        blurb: 'View/download',
                         link: 'assets/docs/william_chandler_resume.pdf'
                     }
                 ],
