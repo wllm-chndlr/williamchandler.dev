@@ -1,11 +1,9 @@
+@import 'base/variables';
+@import 'components/animations';
+@import 'components/buttons';
+@import 'components/social';
+
 @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono);
-
-$base-color: #43494b;
-
-$gray: rgb(33, 36, 36);
-$blue: rgb(65, 199, 199);
-$white: rgb(232, 232, 232);
-$light-gray: rgb(146, 144, 153);
 
 * {
     font-family: 'IBM Plex Mono', monospace;
@@ -95,79 +93,6 @@ a {
         }
     }
 
-    .wavy-waves {
-        grid-area: 1 / 1 / 2 / 10;
-        z-index: 5;
-
-        .wave-container {
-            background: $gray;
-            min-height:100px;
-            max-height:100px;
-            transform: rotate(180deg);
-
-            .waves {
-                width: 100%;
-                margin-bottom:-7px; /*Fix for safari gap*/
-                min-height:100px;
-                max-height:100px;
-            }
-
-            .parallax > use {
-                animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
-            }
-            .parallax > use:nth-child(1) {
-                animation-delay: -2s;
-                animation-duration: 7s;
-            }
-            .parallax > use:nth-child(2) {
-                animation-delay: -3s;
-                animation-duration: 10s;
-            }
-            .parallax > use:nth-child(3) {
-                animation-delay: -4s;
-                animation-duration: 13s;
-            }
-            .parallax > use:nth-child(4) {
-                animation-delay: -5s;
-                animation-duration: 20s;
-            }
-
-            @keyframes move-forever {
-                0% {
-                    transform: translate3d(-90px,0,0);
-                }
-                100% {
-                    transform: translate3d(85px,0,0);
-                }
-            }
-        }
-    }
-
-    .social-icons {
-        align-items: center;
-        display: flex;
-        grid-area: 5 / 1 / 7 / 2;
-        justify-content: flex-start;
-
-        .social-container {
-            display: grid;
-            flex-direction: column;
-            align-items: center;
-
-            .fa,
-            .codewars-icon {
-                color: $white;
-                font-size: 1.5rem;
-                margin: 1rem;
-
-                &:hover {
-                    color: $blue;
-                    transition: all 0.5s ease;
-                }
-            }
-        }
-    }
-
     .index-headshot {
         grid-area: 3 / 3 / 5 / 5;
         display: flex;
@@ -203,13 +128,6 @@ a {
         display: flex;
         flex-direction: column;
         grid-area: 2 / 6 / 5 / 8;
-
-        .about-button {
-            &.active {
-                color: $gray;
-                background: $white;
-            }
-        }
     }
 
     .info-container {
@@ -251,13 +169,6 @@ a {
         flex-direction: column;
         grid-area: 2 / 2 / 7 / 4;
         overflow-y: auto;
-
-        .project-button {
-            &.active {
-                color: $gray;
-                background: $white;
-            }
-        }
 
         ::-webkit-scrollbar {
             display: none;
@@ -309,34 +220,6 @@ a {
                 .button-container {
                     display: flex;
                     margin-bottom: 1rem;
-
-                    .project-button {
-                        background: $gray;
-                        border: 1px solid $light-gray;
-                        border-radius: 3px;
-                        font-size: 1rem;
-                        margin: 0.25rem;
-                        padding: 0.5rem;
-                        transition: all 0.45s ease;
-
-                        a {
-                            min-height: 100%;
-                        }
-
-                        &:hover {
-                            background: $white;
-
-                            a {
-                                color: $gray;
-                            }
-                        }
-
-                        &:active {
-                            transform: translateY(0.5px);
-                        }
-
-                        &:focus { outline: none; }
-                    }
                 }
             }
         }
@@ -353,57 +236,9 @@ a {
         }
     }
 
-    .project-button {
-        background: transparent;
-        border: 1px solid $light-gray;
-        border-radius: 3px;
-        color: $white;
-        font-size: 1rem;
-        margin-bottom: 1rem;
-        max-width: 250px;
-        padding: 1rem;
-        text-align: left;
-        transition: all 0.5s ease;
-        cursor: pointer;
 
-        &.about-button {
-            padding: 0.5rem;
-        }
 
-        &:hover {
-            background: $white;
-            border: 1px solid $white;
-            color: $gray;
-        }
-    }
 
-    .reset-button {
-        color: orangered;
-        background: $gray;
-        border: none;
-        &:hover {
-            background: $gray;
-            border: none;
-            color: orange
-        }
-    }
-
-    .button-ghost {
-        background: transparent;
-        border: 1px solid $white;
-        border-radius: 3px;
-        color: $white;
-        margin-bottom: 1rem;
-        max-width: 150px;
-        padding: 1rem;
-        text-align: left;
-        transition: all 1s ease;
-        cursor: pointer;
-
-        &:hover {
-            color: $blue;
-        }
-    }
 }
 
 @media (max-width: 840px) {
@@ -546,7 +381,6 @@ a {
             font-size: 0.75rem;
             margin-bottom: 2rem;
             margin-top: .5rem;
-
         }
     }
 }

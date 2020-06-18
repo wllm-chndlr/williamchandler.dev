@@ -9,10 +9,10 @@ export default Route.extend({
                 title: 'Tech',
                 items: [
                     'JavaScript',
-                    'Ember',
-                    'React',
                     'HTML5',
                     'CSS3',
+                    'Ember',
+                    'React',
                     'Node',
                     'Sass',
                     'CSS Grid',

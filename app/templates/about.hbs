@@ -15,7 +15,7 @@
 <div class="info-list">
   {{#each this.model as |info|}}
     <button
-      class="project-button about-button {{if (eq infoToDisplay info) "active"}}"
+      class="primary-button {{if (eq infoToDisplay info) "active"}}"
       {{action "launchInfo" info}}
     >
       {{info.title}}

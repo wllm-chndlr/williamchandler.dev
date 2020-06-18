@@ -3,7 +3,7 @@
 <div class="project-list">
   {{#each this.model as |project|}}
     <button
-      class="project-button {{if (eq projectToDisplay project) "active"}}"
+      class="primary-button {{if (eq projectToDisplay project) "active"}}"
       {{action "launchProject" project}}
     >
       {{project.title}}
