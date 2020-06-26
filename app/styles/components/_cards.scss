@@ -1,0 +1,51 @@
+.info-card {
+    display: flex;
+    flex-direction: row;
+
+    .info-items {
+        list-style: none;
+        width: 100%;
+
+        li {
+            border-left: 1px solid $blue;
+            padding-left: 6px;
+        }
+    }
+
+    .info-image {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.15s ease;
+
+    .project-image {
+        width: 500px;
+        max-width: 100%;
+        border: 1px solid $light-gray;
+        border-radius: 3px;
+    }
+
+    .project-info {
+        padding: 1rem;
+
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-desc {
+            margin-bottom: 1rem;
+            min-height: 50px;
+        }
+
+        .button-container {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+    }
+}
