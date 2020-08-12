@@ -21,6 +21,14 @@ export default Route.extend({
                 github: 'https://github.com/wllm-chndlr/hoox',
             },
             {
+                id: 14,
+                title: 'Todo MVC',
+                image: 'assets/images/todomvc.png',
+                description: 'Easy-to-use todo app built with Ember',
+                url: 'https://to-do-mvc.netlify.app/',
+                github: 'https://github.com/wllm-chndlr/todomvc',
+            },
+            {
                 id: 12,
                 title: 'Expense Tracker',
                 image: 'assets/images/expense-tracker.png',
