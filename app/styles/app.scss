@@ -116,8 +116,9 @@ a {
     }
 
     .about-bio {
-        grid-area: 2 / 2 / 6 / 5;
+        grid-area: 2 / 2 / 7 / 5;
         display: grid;
+        margin-right: 2rem;
         overflow-y: auto;
 
         .p-about {
@@ -128,12 +129,11 @@ a {
     .info-list {
         display: flex;
         flex-direction: column;
-        grid-area: 2 / 6 / 4 / 8;
+        grid-area: 2 / 5 / 4 / 7;
     }
 
     .info-container {
-        grid-area: 4 / 6 / 7 / 9;
-        margin-top: 1rem;
+        grid-area: 2 / 7 / 6 / 9;
         overflow-y: auto;
 
         ul {
