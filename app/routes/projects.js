@@ -4,13 +4,21 @@ export default Route.extend({
     model() {
         return [
             {
+                id: 14,
+                title: 'Slick\'s Slices',
+                image: 'optimized/slicks.png',
+                description: 'Marketing site for local pizza place created with Gatsby, GraphQL, and Sanity',
+                url: 'https://sli-cks-sli-ces.netlify.app/',
+                github: 'https://github.com/wllm-chndlr/gatsby-master',
+                projectToDisplay: true,
+            },
+            {
                 id: 13,
                 title: 'Ember Animated',
                 image: 'optimized/animated.png',
                 description: 'Showcase of animations created with Ember Animated',
                 url: 'https://ember-animated.netlify.app/',
                 github: 'https://github.com/wllm-chndlr/anima',
-                projectToDisplay: true,
             },
             {
                 id: 1,
