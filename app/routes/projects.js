@@ -146,9 +146,11 @@ export default Route.extend({
     },
 
     setupController(controller, model) {
+        const firstProject = model.get('firstObject');
         controller.setProperties({
             model,
-            projectToDisplay: model.get('firstObject'),
+            projectToDisplay: firstProject,
+            projectToShow: firstProject
         });
     },
 });

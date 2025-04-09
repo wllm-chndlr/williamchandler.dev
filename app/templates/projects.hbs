@@ -3,7 +3,7 @@
 <div class="project-list">
   {{#each this.model as |project|}}
     <button
-      class="primary-button {{if (eq projectToDisplay project) "active"}}"
+      class="primary-button {{if (eq this.projectToShow project) "active"}}"
       {{action "launchProject" project}}
     >
       {{project.title}}
@@ -11,10 +11,9 @@
   {{/each}}
 </div>
 
-<div class="project-container">
-  {{#if projectToDisplay}}
-      <ProjectCard @project={{projectToDisplay}} />
-  {{else}}
-      <ProjectCard @project={{selectedProject}} />
-  {{/if}}
+<div class="project-container relative">
+  <ProjectCard
+    @project={{this.projectToShow}}
+    style={{this.projectCardStyle}}
+  />
 </div>
